@@ -11,6 +11,7 @@ services:
       - ./hadoop.env
     ports:
       - 50070:50070
+      - 8020:8020
   datanode:
     image: bde2020/hadoop-datanode:1.1.0-hadoop2.8-java8
     depends_on: 
